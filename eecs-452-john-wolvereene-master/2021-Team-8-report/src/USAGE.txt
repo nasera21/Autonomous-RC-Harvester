@@ -1,0 +1,17 @@
+
+
+USAGE
+
+	The goal of the execution for this project's code is to be hands-off as possible.
+	This means that there is very little human interaction necessary once the code begins
+	execution. However, the user can do some calibration to calibrate the computer vision
+	parameters. On startup of the program, several windows pop up showing the different 
+	isolated values such as H-values image, S-values image, raw image, etc as well as a
+	slidebar that allows the user to fine tune the parameters such that the red stakes are
+	well located in the current lighting conditions. One can use the slide bar to adjust the
+	threshold values until all threshold values lead to most of the stakes being identified.
+	At this point, the user can then input those constants to the global values near the top
+	of finalCVClean.py. To capture the current image and display a plot of detected stakes, 
+	press c while the program is running. To exit the program, press q while the program is 
+	running. Of course to exit the program, a standard CTRL+C can be used to end the
+	program.

@@ -1,0 +1,41 @@
+CODE WRITTEN BY TEAM 8 TOWARDS CREDIT COMPLETION FOR EECS 452
+#################################################
+Team: John Wolvereene (Team 8)
+Team Members: Adithya Subbiah  - asubbiah@umich.edu
+	      Katie Bertcher   - kbertch@umich.edu
+	      Jack Winkelried  - jtwink@umich.edu
+	      Maya Pandya      - mjpandya@umich.edu
+	      Amir Naser       - afnaser@umich.edu
+	      Elisabeth Jahnke - emjahnke@umich.edu
+
+##################################################
+##################################################
+
+
+CONTENTS
+	Arduino_Code 					- Contains all code for the Arduino
+		Arduino_Custom_Libraries		- Contains Custom Libraries made for the Arduino Code
+			Distance_Sensor_Library		- Library for the Distance Sensor
+			RC_Car_Library			- Library for the RC Car
+			UART_Library			- Library for the UART bus
+		Arduino_Main				- Contains .ino file for the Arduino (main file)
+	Raspberry_Pi_Code				- Contains all code for the Raspberry Pi
+		finalCVClean.py				- "Main" python file for Raspberry Pi
+		UART_Quantization.py			- UART quantization function library
+		UART_rpiSerial.py			- UART bus library
+
+
+The Arduino code files are meant to be all uploaded to the Arduino Uno. The folders for the
+Distance Sensors, RC Car, and UART bus in the Arduino_Custom_Libraries folder are meant to be
+libraries installed on the Arduino IDE prior to uploading the main file. Within the
+Arduino_Main file, there is a single .ino file meant to be uploaded to the Arduino Uno and
+calls the functions in the custom library.
+
+
+The Raspberry Pi code files are all contained in the Raspberry_Pi_Code folder. finalCVClean.py
+is meant to be the "main" file, and when run using the command "python3 finalCVClean.py" executes
+the entire program. UART_Quantization.py and UART_rpiSerial.py provides the needed UART funtions
+for finalCVClean.py to call from.
+
+The execution of all of this code relies on proper setup of the RC Car, Arduino, and Raspberry Pi
+hardware!

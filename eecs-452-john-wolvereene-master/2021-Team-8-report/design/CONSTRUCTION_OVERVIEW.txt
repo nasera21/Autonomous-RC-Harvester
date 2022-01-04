@@ -1,0 +1,59 @@
+MDE PROJECT SUBMISSION FOR TEAM 8
+SUBMITTED TOWARDS CREDIT FOR EECS 452 WINTER 2021
+#################################################
+Team: John Wolvereene (Team 8)
+Team Members: Adithya Subbiah  - asubbiah@umich.edu
+	      Katie Bertcher   - kbertch@umich.edu
+	      Jack Winkelried  - jtwink@umich.edu
+	      Maya Pandya      - mjpandya@umich.edu
+	      Amir Naser       - afnaser@umich.edu
+	      Elisabeth Jahnke - emjahnke@umich.edu
+
+##################################################
+##################################################
+
+
+Below are instructions for the basic design of the RC Car. All instructions refer to pictures included in the design folder.
+Parts list is found in the Team_8_Parts_List.xlsx file.
+
+Preparing the Purchased RC Car:
+	
+	Original controller is to be removed (OG_Controller.jpg), original servo is to be removed.
+	The original servo is a 5-wire servo that requires a separate driving controller to operate, thus we need
+	to remove this servo and replace it with a 3 wire servo for easy use. But we will keep the original steering
+	linkage system. The original controller also must be removed as it is not suitable for our needs.
+
+	For the battery, remove the original battery connectors, strip wires, and crimp on spade connectors. Then cut a DC
+	barrel jack cable, strip the internal wires, and crimp opposite sex spade connectors. Connect the DC barrel jack cable
+	to the battery via the spade connectors. The motor and Arduino power source has been prepared. Similar to (Battery.jpg)
+
+	For the motor, cut the original connectors and strip wires. These do not need connectors on them as they will be inserted
+	into the Screw-hole terminal on the Adafruit Motor Shield in port M4. Similar to (Underbody_side.jpg)
+
+	The servo prep is complicated. The basic idea is to feed a screw through the linkage bar into the servo drum as shown in
+	the picture (Servo_linkage.jpg). First finding a mating screw that fits the servo is necessary. One may need to use a standoff 
+	as well if the screw length is inadequate. For both cars used in this project, a small standoff was inserted into the servo drum
+	and then the screw was fed in through the other side of the linkage bar. The next step is to feed the screw through the linkage bar
+	and screw into the servo drum until tight. You may need to expand the size of the holes on either side of the linkage bar by shaving
+	it. Once tight, set the servo to 90 degrees. At this point you will need to ensure that when the servo is commanded at 90 degrees, the
+	wheels are aligned such that the car will move straight. Position the servo on the plastic drive shaft protector such that the 90 degree
+	angle forces the wheels to be aligned straight. Once positioned, hot glue servo to the plastic drive shaft protector.
+
+	To mount the Arduino, we hot glued pieces of cardboard into a stack such that the arduino could lay flat on the plastic drive shaft
+	protector and not impact the motor. Then the Arduino is taped to the cardboard stack. The Adafruit Motor Shield is then sandwiched
+	on top of the Arduino as it was designed to be. To power Arduino, the motor, and servo plug in the dc barrel jack cable connected to
+	the battery and place battery into the shelf where the battery was originally placed in the RC Car. Similar to (Underbody_OtherSide.jpg)
+
+	To mount the Raspberry Pi, and Raspberry Pi camera, certain modifications to the plastic body the RC car came with need to be made.
+	Follow the cuts made in these pictures (Plastic_body.jpg) (Plastic_body_back.jpg). The idea is to expose the Arduino to prevent any collisions
+	between the plastic body and the Arduino. A small incision needs to be made on the windshield of the plastic body for cables to be ran
+	through from the distance sensors. The team used a piece of cardboard, hot glued to the back of the car to mount the Raspberry Pi Camera.
+	After the plastic body is prepared, mount on vehicle and make any necessary adjustments to get it to rest on the underbody easy. Then tape
+	the Raspberry Pi to the bed of the truck, tape the distance sensors and route all cables as necessary as shown in this picture. (Completed_Car.png)
+
+
+
+AT THIS POINT YOU SHOULD HAVE A MODIFIED RC CAR READY FOR SOFTWARE EXECUTION. ENJOY!
+
+
+

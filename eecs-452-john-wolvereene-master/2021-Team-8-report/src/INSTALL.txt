@@ -1,0 +1,32 @@
+
+
+INSTALLATION INSTRUCTIONS
+
+	Raspberry Pi:
+		Necessary libraries to be installed:
+			Python 3
+			picamera
+			cv2
+			time
+			matplotlib
+			numpy
+			serial
+			RPi.GPIO
+			sklearn
+
+	Arduino:
+		Necessary libraries to be installed:
+			DistanceSensorLib - custom
+			RCCarLib	  - custom
+			carSerial	  - custom
+			NewPing
+
+
+
+Once all libraries are installed:
+
+For Arduino:
+	Upload PID_Controller_with_car_Final.ino to the Arduino Uno
+
+For Raspberry Pi:
+	Execute script using command: "python3 finalCVClean.py"
